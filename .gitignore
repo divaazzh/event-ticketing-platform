@@ -1,0 +1,36 @@
+# Root .gitignore for Event & Ticketing Platform
+
+# Environment & local credentials
+.env
+.env.backup
+.env.production
+*.env
+
+# Dependencies
+node_modules/
+backend/vendor/
+frontend/node_modules/
+
+# Build artifacts & caches
+frontend/dist/
+frontend/dist-ssr/
+backend/bootstrap/cache/*
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/logs/*
+
+# Local SQLite databases
+backend/database/database.sqlite
+backend/database/database.sqlite-journal
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
